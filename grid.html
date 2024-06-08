@@ -7,12 +7,16 @@
     <style>
         .container{
             display: grid;
-            grid-template-columns: repeat(4,1fr);
+            grid-template-columns: repeat(4,150px);
             gap: 20px;
-            grid-template-rows: repeat(3,200px) 50px 50px ;
+            grid-template-rows: repeat(3,150px) 50px 50px ;
+            justify-content: center;
         }
         .box{
             background-color: gray;
+            font-size: 2em;
+            text-align: center;
+            align-content: center;
         }
         #box-1{
             grid-row: span 5;
