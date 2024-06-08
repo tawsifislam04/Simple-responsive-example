@@ -1,0 +1,38 @@
+.header,.main,.nav,.sidebar,.ad,.footer{
+    background-color: bisque;
+    border: 2px solid tomato;
+    border-radius: 5px;
+    padding: 5px;
+}
+.header{
+    grid-area: header;
+}
+.nav{
+    grid-area: nav;
+}
+ul{
+    list-style: none;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.ad{
+    grid-area: ad;
+}
+.footer{
+    grid-area: footer;
+}
+
+.body{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav    main   main   sidebar"
+    "nav    main   main   ad"
+    "footer footer footer footer"
+    ;
+    gap: 20px;
+}
